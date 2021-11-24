@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<html>
+
+<body>
+    <div class="divmain">
+        <div class="navbar">
+            <nav>
+                <a href="index.html"><img id="navlogo" src="./images/logo on dark.png" height="50px" width="300px"></a>
+
+                <div class="nav-lnks" id="navlinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="about.html">ABOUT</a></li>
+                        <li> <a href="contact.html">CONTACT</a></li>
+
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div class="divmain">
+        <section class="small-header">
+            <h1>About Me</h1>
+        </section>
+
+        <section class="about">
+            <div class="in-about">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
+                    Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
+
+                </p>
+            </div>
+            <div class="in-about2">
+                <img src="./images/ray-about.jpg" alt="sabbiiti raymond" width="700px" height="auto">
+            </div>
+        </section>
+
+        <section id="up-down" class="about">
+            <div class="in-about2">
+                <img src="./images/wow.jpg" alt="sabbiiti raymond" width="700px" height="500px">
+
+            </div>
+            <div class="in-about">
+                <h2>What I Do</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
+                    Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
+
+                </p>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="divmain">
+        <section class="button-section">
+            <a class="cbtn" href="contact.html">Contact me</a>
+        </section>
+    </div>
+
+    <!---this is mt footer-->
+    <div class="divmain">
+        <section class="footer">
+            <div class="w1">
+                <img src="./images/logo on dark.png" alt="logo raymond" width="300px" height="50px">
+            </div>
+            <div class="w2">
+                <h1>Contact With Me</h1>
+                <p>Email:<a href="mailto"> raymond@thegrowthoffice.com</a></p>
+                <p>Phone:<a href="Tel:+256785234859">+256785234859</a></p>
+                <div class="w2-icons">
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#"><i class="fa fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="w3">
+                <h1> Lacation</h1>
+                <p>Kampala (Ug)</p>
+                <p>Mutungo</p>
+            </div>
+        </section>
+    </div>
+
+    <!---this is may menu commands on click-->
+    <script>
+        var navlinks = document.getElementById("navlinks")
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

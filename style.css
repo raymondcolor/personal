@@ -1,0 +1,476 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.divmain {
+    margin-left: -9px;
+    margin-right: -9px;
+    margin-top: -5;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('./images/ray.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    padding: 7px 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-lnks {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-lnks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 7px 12px;
+    position: relative;
+}
+
+.nav-lnks ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-lnks ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background-color: #11b6a5;
+    transition: 0.8s;
+}
+
+.nav-lnks ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    padding-top: 140px;
+    padding-left: 60px;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    font-size: 18px;
+}
+
+.helo-btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    background: transparent;
+    text-decoration: none;
+    padding: 13px 30px;
+    color: #fff;
+    transition: 0.8s;
+}
+
+.helo-btn:hover {
+    border: 1px solid #11b6a5;
+    background-color: #11b6a5;
+}
+
+nav .fa {
+    display: none;
+}
+
+.what-i-do {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.do {
+    height: 250px;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 20ppx 20px;
+    transition: 1s;
+}
+
+.do:hover {
+    background-color: #11b6a5;
+    border-radius: 10px;
+    color: white;
+}
+
+.do h3 {
+    font-size: 25px;
+}
+
+.do p {
+    font-size: 19px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 260px;
+    width: 100%;
+}
+
+.w1 {
+    height: 260px;
+    width: 33.3%;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 40px 80px;
+}
+
+.w2 {
+    height: 260px;
+    width: 33.3%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 25px 80px;
+}
+
+.w2 a {
+    text-decoration: none;
+    color: #11b6a5;
+}
+
+.footer p {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.w2-icons a {
+    margin: 9px;
+    font-size: 30px;
+}
+
+.w3 {
+    height: 260px;
+    width: 33.4%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 25px 20px;
+}
+
+
+/* below are the styles of the about page*/
+
+.small-header {
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url('./images/17.jpg');
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    color: #fff;
+    padding-top: 120px;
+    padding-left: 80px;
+}
+
+.small-header h1 {
+    font-size: 40px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+}
+
+.in-about {
+    width: 50%;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    padding: 80px 85px;
+    line-height: 25px;
+    font-size: 19px;
+}
+
+.in-about2 {
+    width: 50%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.button-section {
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 580px;
+    padding-top: 45px;
+}
+
+.cbtn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #11b6a5;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 3px;
+    transition: 0.8s;
+}
+
+.cbtn:hover {
+    background-color: #000000;
+}
+
+
+/*this is the style for the contac*/
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 100px;
+}
+
+form {
+    font-family: 'Lato', sans-serif;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid rgb(104, 103, 103);
+    resize: vertical;
+    outline: none;
+    border-bottom: 1px solid #11b6a5;
+    color: rgb(112, 112, 112);
+}
+
+input[type="email"] {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid #11b6a5;
+    resize: vertical;
+    outline: none;
+    color: rgb(112, 112, 112);
+}
+
+label {
+    color: rgb(112, 112, 112);
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+    font-size: 18px;
+    resize: vertical;
+    outline: none;
+    border-bottom: 1px solid #11b6a5;
+    font-family: 'Lato', sans-serif;
+}
+
+.send-btn {
+    padding: 15px;
+    width: 30%;
+    background-color: #11b6a5;
+    color: white;
+    border: #11b6a5;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+
+.send-btn:hover {
+    background-color: #000000;
+}
+
+
+/* below is the media quary of the homw page*/
+
+@media (max-width:750px) {
+    .text-box h1 {
+        font-size: 25px;
+        padding-left: 1px;
+    }
+    .nav-lnks ul li {
+        display: block;
+    }
+    .text-box {
+        padding-left: 15px;
+    }
+    nav {
+        padding: 7px 20px;
+    }
+    .nav-lnks {
+        position: absolute;
+        background-color: #11b6a5;
+        height: 200px;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    #navlogo {
+        height: 16px;
+        width: 100px;
+        padding-top: 2px;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50px;
+    }
+    .header {
+        min-height: 500px;
+        width: 100%;
+    }
+    .what-i-do {
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+    }
+    .do {
+        width: 100%;
+        padding: 3px;
+    }
+    .do h3 {
+        font-size: 20px;
+    }
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+    .footer p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .w1 {
+        display: none;
+    }
+    .w2 {
+        width: 100%;
+        padding: 5px 10px;
+        text-align: center;
+        height: auto;
+    }
+    .w2 h1 {
+        font-size: 20px;
+    }
+    .w3 h1 {
+        font-size: 20px;
+    }
+    .w3 {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        margin-bottom: -5px;
+    }
+    .w2-icons a {
+        margin: 9px;
+        font-size: 20px;
+    }
+}
+
+
+/*this the media quary for the about page*/
+
+@media (max-width:750px) {
+    .small-header {
+        padding: 90px 0px;
+        text-align: center;
+    }
+    .about {
+        flex-direction: column;
+        height: auto;
+    }
+    .in-about {
+        width: 100%;
+        padding: 10px 8px;
+        height: 400px;
+        padding: 10px 15px;
+    }
+    .in-about2 {
+        width: 100%;
+        height: 400px;
+    }
+    /*makes the divs of the second section to reverse the flow direction by turning upside down*/
+    #up-down {
+        flex-direction: column-reverse;
+        margin-top: -110px;
+    }
+    .in-about2 img {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+    }
+    .button-section {
+        padding-left: 80px;
+        padding-top: 5px;
+        height: 150px;
+    }
+}
+
+
+/*this is the media query for the contact page*/
+
+@media (max-width:750px) {
+    .contact {
+        flex-direction: column;
+        height: 600px;
+        width: 100%;
+        padding: 60px 20px;
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 50%;
+        height: 40px;
+        resize: vertical;
+    }
+    textarea {
+        width: 95%;
+        height: 200px;
+        font-size: 18px;
+        resize: vertical;
+    }
+    textarea {
+        font-size: 14px;
+    }
+}
